@@ -30,6 +30,30 @@ Follow the 'Cable/hub setup' step above to get the cables connected and then fol
 Once the device is in TWRP, then you can remove the USB male cable from the OTG USB A port, and then connect the USB Hub.
 Now you should be able to use the mouse and USB drive in TWRP to flash your system with a new rom, or other options that TWRP provides.
 
-In TWRP, I went to 'Install' and then selected the rooter rom zip file and went through the process of flashing the Firestick with it.
-Once complete I selected the option to clear/wipe the cache and D* partitions. I think this part allowed me to complete the Firestick setup as it removed the update blocker I had installed.
+In TWRP, I went to 'Install' and then selected the rooted rom zip file and went through the process of flashing the Firestick with it.
+Once complete, I selected the option to 'Wipe Cache/Dalvik'. I think this part allowed me to complete the Firestick setup process afterwards as it removed the update blocker I had installed.
 
+---
+
+# Install rooted rom
+In the Developer Options, enable USB Debug mode
+The connect from any computer using ADB or the Android 'Remote ADB Shell' application, and connect to the device via:
+```
+adb connect <ip>:5555
+```
+and then confirm that you are connected via:
+```
+adb devices
+```
+Make sure that there is only 1 device connected, otherwise disconnect them using:
+```
+adb disconnect <ip>:5555
+```
+Then to enter the Recoverty Mode and access TWRP, issue command:
+```
+adb reboot recovery
+```
+The Firestick will then restart and take you to the TWRP interface.
+Now connect your URB Hub with the mouse and USB drive, to the OTG cable.
+Select 'Install' and then try to find the ZIP file containing the rom. I needed to Select Storage and select OTG. Then I was able to find my new rom file.
+Once complete, I selected the option to 'Wipe Cache/Dalvik', and then rebooted.
