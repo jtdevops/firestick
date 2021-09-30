@@ -7,6 +7,7 @@ I then went and did a Factory Reset on the device, which did its job, but wasn't
 This caused my Firestick to be unusable, and essentially bricked as I couldn't get past the update check.
 
 To unbrick/unlock the device I followed these steps: https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/
+I downloaded the latest prerooted rom and saved it on my USB: https://forum.xda-developers.com/t/fire-tv-stick-2-tank-prerooted-stock-images-5-2-7-3_r1.3912271/
 
 To fix this issue, I was unable to connect a keyboard/mouse to the Firestick in order to flash a new rom images.
 
@@ -17,7 +18,7 @@ I needed to use the following to get access to the TWRP screen after the device 
 - USB male to male cable
 - External power for the Hub and a USB power cable and adapter to connect to the OTG cable
 
-Cable/hub setup:
+### Cable/hub setup:
 - Connect external (USB) power to the hub, then connect the USB and mouse
 - Connect external (USB) power to the OTG cable
 - Connect the USB male to male cable to the OTG USB A port, and the other end into the laptop's USB port so you can run the scrips linked below
@@ -28,3 +29,7 @@ Follow the 'Cable/hub setup' step above to get the cables connected and then fol
 
 Once the device is in TWRP, then you can remove the USB male cable from the OTG USB A port, and then connect the USB Hub.
 Now you should be able to use the mouse and USB drive in TWRP to flash your system with a new rom, or other options that TWRP provides.
+
+In TWRP, I went to 'Install' and then selected the rooter rom zip file and went through the process of flashing the Firestick with it.
+Once complete I selected the option to clear/wipe the cache and D* partitions. I think this part allowed me to complete the Firestick setup as it removed the update blocker I had installed.
+
