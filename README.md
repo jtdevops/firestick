@@ -1,17 +1,19 @@
 # Firestick TV 2nd gen (tank)
 ## Steps to unbrick/root un-updatable devices
 
-My experience:
+### My experience:
 After I had rooted my device a year ago, I had also blocked future updates from happening.
 I then went and did a Factory Reset on the device, which did its job, but wasn't able to connect to the Amazon servers to check for updates. The device refused to complete the initial setup process because of this.
 This caused my Firestick to be unusable, and essentially bricked as I couldn't get past the update check.
 
 To unbrick/unlock the device I followed these steps: https://forum.xda-developers.com/t/unlock-root-twrp-unbrick-fire-tv-stick-2nd-gen-tank.3907002/
+
 I downloaded the latest prerooted rom and saved it on my USB: https://forum.xda-developers.com/t/fire-tv-stick-2-tank-prerooted-stock-images-5-2-7-3_r1.3912271/
+Here is the newest official rom: https://forum.xda-developers.com/t/fire-tv-tank-5-2-8-2-ota-zip.4308269/
 
-To fix this issue, I was unable to connect a keyboard/mouse to the Firestick in order to flash a new rom images.
+To fix this issue, I needed to connect a keyboard/mouse to the Firestick in order to navigate the TWRP interface and flash a new rom images.
 
-I needed to use the following to get access to the TWRP screen after the device we unlocked:
+I needed to use the following to get access to the TWRP screen after the device was unlocked:
 - Firestick OTG cable (similar to: https://www.amazon.ca/Pack-Cable-Fire-Stick-Host/dp/B083KJ1B5H)
 - Hub that allows external power - since the USB and mouse need additional power
 - USB drive containing the rom image to flash in TWRP
